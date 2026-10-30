@@ -18,3 +18,26 @@
 2026-10-30T12:25:56Z INF Starting metrics server on 127.0.0.1:20241/metrics
 2026-10-30T12:25:56Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.53
 2026-10-30T12:25:57Z INF Registered tunnel connection connIndex=0 connection=51f7660a-87a0-44a9-af64-f01ff9897dbb event=0 ip=198.41.200.53 location=iad08 protocol=http2
+2026-10-30T12:26:02Z INF +--------------------------------------------------------------------------------------+
+2026-10-30T12:26:02Z INF |                               CONNECTIVITY PRE-CHECKS                                |
+2026-10-30T12:26:02Z INF +--------------------------------------------------------------------------------------+
+2026-10-30T12:26:02Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                        |
+2026-10-30T12:26:02Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully      |
+2026-10-30T12:26:02Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully      |
+2026-10-30T12:26:02Z INF |  UDP Connectivity  region1.v2.argotunnel.com  PASS    QUIC connection successful     |
+2026-10-30T12:26:02Z INF |  UDP Connectivity  region2.v2.argotunnel.com  PASS    QUIC connection successful     |
+2026-10-30T12:26:02Z INF |  TCP Connectivity  region1.v2.argotunnel.com  PASS    HTTP/2 connection successful   |
+2026-10-30T12:26:02Z INF |  TCP Connectivity  region2.v2.argotunnel.com  PASS    HTTP/2 connection successful   |
+2026-10-30T12:26:02Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable               |
+2026-10-30T12:26:02Z INF |                                                                                      |
+2026-10-30T12:26:02Z INF |  SUMMARY: Environment is healthy. cloudflared will use 'http2' as primary protocol.  |
+2026-10-30T12:26:02Z INF +--------------------------------------------------------------------------------------+
+2026-10-30T12:26:02Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=05ad004e-4b56-4e1c-b7c3-34279c52b85c status=pass target=region1.v2.argotunnel.com
+2026-10-30T12:26:02Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=05ad004e-4b56-4e1c-b7c3-34279c52b85c status=pass target=region2.v2.argotunnel.com
+2026-10-30T12:26:02Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=05ad004e-4b56-4e1c-b7c3-34279c52b85c status=pass target=region1.v2.argotunnel.com
+2026-10-30T12:26:02Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=05ad004e-4b56-4e1c-b7c3-34279c52b85c status=pass target=region2.v2.argotunnel.com
+2026-10-30T12:26:02Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=05ad004e-4b56-4e1c-b7c3-34279c52b85c status=pass target=region1.v2.argotunnel.com
+2026-10-30T12:26:02Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=05ad004e-4b56-4e1c-b7c3-34279c52b85c status=pass target=region2.v2.argotunnel.com
+2026-10-30T12:26:02Z INF precheck component="Cloudflare API" details="API is reachable" run_id=05ad004e-4b56-4e1c-b7c3-34279c52b85c status=pass target=api.cloudflare.com:443
+2026-10-30T12:26:02Z INF precheck complete hard_fail=false run_id=05ad004e-4b56-4e1c-b7c3-34279c52b85c suggested_protocol=http2
+2026-10-30T12:56:21Z INF Initiating graceful shutdown due to signal interrupt ...
